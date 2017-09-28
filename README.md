@@ -40,4 +40,4 @@ There is an initial pattern that can be set which is considered the *seed* of th
 
 
 #### Further Reading
-[Stanford: A Discussion On The Game of Life](web.stanford.edu/~cdebs/GameOfLife/)
+[Stanford: A Discussion On The Game of Life](http://web.stanford.edu/~cdebs/GameOfLife/)
