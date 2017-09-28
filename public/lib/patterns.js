@@ -1,10 +1,9 @@
-const zeroFill = (grid, width, height) => {
+export const zeroFill = (grid, width, height) => {
   for(let i = 0; i < width; i++) {
     for(let j = 0; j < height;j++) {
       grid[i][j] = 0;
     }
   }
-  return grid;
 };
 
 export const randomFill = (grid, width, height) => {
@@ -17,9 +16,7 @@ export const randomFill = (grid, width, height) => {
   }
 };
 
-export const acorn = (grid, width, height, x = 500, y = 220) => {
-  grid = zeroFill(grid, width, height);
-
+export const acorn = (grid, x = 500, y = 220) => {
   grid[2 + x][1 + y] = 1;
   grid[4 + x][2 + y] = 1;
   grid[1 + x][3 + y] = 1;
@@ -29,9 +26,7 @@ export const acorn = (grid, width, height, x = 500, y = 220) => {
   grid[7 + x][3 + y] = 1;
 };
 
-export const gosperGunGlider = (grid, width, height, x = 0, y = 0) => {
-  grid = zeroFill(grid, width, height);
-
+export const gosperGunGlider = (grid, x = 0, y = 0) => {
   grid[2 + x][6 + y] = 1;
   grid[3 + x][6 + y] = 1;
   grid[2 + x][7 + y] = 1;

@@ -1,4 +1,4 @@
-import { randomFill, gosperGunGlider, acorn } from './patterns';
+import { zeroFill, randomFill, gosperGunGlider, acorn } from './patterns';
 
 class Game {
   constructor(canvas, ctx) {
@@ -8,6 +8,7 @@ class Game {
 
     this.grid = this.createGrid(this.canvasWidth);
     this.copyGrid = this.createGrid(this.canvasWidth);
+    zeroFill(this.grid, this.canvasWidth, this.canvasHeight);
     this.bindKeys();
     this.buttonListeners();
 
@@ -27,13 +28,14 @@ class Game {
     this.random = document.getElementById('random');
     this.acorn = document.getElementById('acorn');
     this.gosper.addEventListener('click', e => {
-      gosperGunGlider(
-        this.grid,
-        this.canvasWidth,
-        this.canvasHeight,
-        20,
-        10
-      );
+      gosperGunGlider(this.grid, 20, 20);
+      gosperGunGlider(this.grid, 60, 20);
+      gosperGunGlider(this.grid, 100, 20);
+      gosperGunGlider(this.grid, 140, 20);
+      gosperGunGlider(this.grid, 180, 20);
+      gosperGunGlider(this.grid, 220, 20);
+      gosperGunGlider(this.grid, 260, 20);
+      gosperGunGlider(this.grid, 300, 20);
     });
     this.random.addEventListener('click', e => {
       randomFill(this.grid, this.canvasWidth, this.canvasHeight);

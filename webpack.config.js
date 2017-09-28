@@ -1,7 +1,7 @@
 module.exports = {
-  entry: "./lib/game_of_life.js",
+  entry: "./public/lib/game_of_life.js",
   output: {
-    filename: "./lib/bundle.js"
+    filename: "./public/lib/bundle.js"
   },
   devtool: 'source-map',
   resolve: {
