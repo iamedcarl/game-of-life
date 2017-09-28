@@ -29,5 +29,14 @@ p {
 }
 
 .patterns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 20px auto;
+  width: 400px;
+}
+
+.patterns > p {
+  margin-bottom: 10px;
+  text-align: center;
 }
