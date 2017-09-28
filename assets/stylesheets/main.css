@@ -1,1 +1,29 @@
-@import "reset.css"
+@import "reset.css";
+
+body {
+  background-color: black;
+  color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  margin: 30px auto;
+}
+
+h1 {
+  font-size: 36px;
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+.main {
+  height: 450px;
+  width: 900px;
+  background-color: white;
+}
