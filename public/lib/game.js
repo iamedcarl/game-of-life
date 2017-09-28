@@ -28,6 +28,7 @@ class Game {
     this.random = document.getElementById('random');
     this.acorn = document.getElementById('acorn');
     this.gosper.addEventListener('click', e => {
+      zeroFill(this.grid, this.canvasWidth, this.canvasHeight);
       gosperGunGlider(this.grid, 20, 20);
       gosperGunGlider(this.grid, 60, 20);
       gosperGunGlider(this.grid, 100, 20);
@@ -38,10 +39,12 @@ class Game {
       gosperGunGlider(this.grid, 300, 20);
     });
     this.random.addEventListener('click', e => {
+      zeroFill(this.grid, this.canvasWidth, this.canvasHeight);
       randomFill(this.grid, this.canvasWidth, this.canvasHeight);
     });
     this.acorn.addEventListener('click', e => {
-      acorn(this.grid, this.canvasWidth, this.canvasHeight);
+      zeroFill(this.grid, this.canvasWidth, this.canvasHeight);
+      acorn(this.grid);
     });
   }
 
