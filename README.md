@@ -36,7 +36,7 @@ For every cycle of the game, the cells can be turned on or off based on the foll
 - If a live cell has two or three live neighbors, it continues living
 - If a dead cell has exactly three live neighbors, it comes to life
 
-There is an initial pattern that can be set which is considered the *seed* of the system. The cycle is repeated and further generations are created. This makes for interesting and unpredictable patterns.
+There is an initial pattern that can be set which is considered the *seed* of the system. The cycle is repeated and further generations are created. This makes for interesting patterns.
 
 
 #### Further Reading
