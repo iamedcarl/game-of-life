@@ -1,6 +1,6 @@
 # Conway's Game of Life
 
-[Play here!](https://gameoflife-2017.firebaseapp.com)
+[Play here!](https://edcarladraincem.com/projects/conways-game-of-life/)
 
 _Credit to [Lance Concannon] for the how-to_
 
